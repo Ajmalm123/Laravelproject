@@ -13,12 +13,28 @@
                 @csrf
                 <label for="title">Name*</label>
                 <input type="text" name="title" id="title" class="form-control mb-2"/>
-                <label for="title">Phone Number*</label>
+                @error('title')
+                    <small class="text-danger"> {{$message}}</small>
+                @enderror
+                <br>
+                <label for="phone">Phone Number*</label>
                 <input type="phone" name="phoneno" id="phone" class="form-control mb-2"/>
-                <label for="title">Department Name*</label>
+                @error('phoneno')
+                    <small class="text-danger"> {{$message}}</small>
+                @enderror
+                <br>
+                <label for="department">Department Name*</label>
                 <input type="text" name="depname" id="title2" class="form-control mb-2"/>
-                <label for="title">Designation Name*</label>
+                @error('depname')
+                    <small class="text-danger"> {{$message}}</small>
+                @enderror
+                <br>
+                <label for="designation">Designation Name*</label>
                 <input type="text" name="desname" id="title3" class="form-control mb-2"/>
+                <br>
+                @error('desname')
+                    <small class="text-danger"> {{$message}}</small>
+                @enderror
                 <input type="submit" class="btn btn-dark btn-block" value="Submit"/>
             </form>
         </div>

@@ -7,23 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   </head>
   <body>
       <div class="container">
   <a href="{{route('user')}}" class="btn btn-primary btn-lg btn-block">Users</a>
-  <a href="" class="btn btn-primary btn-lg btn-block">Departments</a>
-  <a href="" class="btn btn-primary btn-lg btn-block">Designations</a>
+  <a href="{{route('department')}}" class="btn btn-primary btn-lg btn-block">Departments</a>
+  <a href="{{route('designation')}}" class="btn btn-primary btn-lg btn-block">Designations</a>
   <br><br><br>
-  <div class="input-group">
-  <div class="form-outline">
-    <input id="search-input" type="search" id="form1" class="form-control" />
-    <label class="form-label" for="form1">Search</label>
-  </div>
-  <button id="search-button" type="button" class="btn btn-primary">
-    <!-- <i class="fas fa-search"></i> -->
-  </button>
+  <div class="container">
+    <div class="search">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="search-1"> <i class='bx bx-search-alt'></i> <input type="text" > </div>
+            </div>
+            <!-- <div class="col-md-6">
+                <div>
+                    <div class="search-2"> <i class='bx bxs-map'></i> <input type="text" > <button>Search</button> </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
 </div>
 </div>
     <!-- Optional JavaScript -->

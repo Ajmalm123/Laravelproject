@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::get('/home', [SortingController::class, 'home'])->name('home');
 Route::post('/store', [SortingController::class, 'store'])->name('store');
 Route::post('/storedep', [SortingController::class, 'storedep'])->name('storedep');
+Route::post('/storedes', [SortingController::class, 'storedes'])->name('storedes');
 Route::get('/user', [SortingController::class, 'user'])->name('user');
 Route::get('/designation', [SortingController::class, 'designation'])->name('designation');
 Route::get('/department', [SortingController::class, 'department'])->name('department');

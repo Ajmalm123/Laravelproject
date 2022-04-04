@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Userss extends Model
 {
+    protected $guarded=[];
     use HasFactory;
+    
     const UPDATED_AT = null;
    
     public function userDesignation() {
@@ -17,4 +19,5 @@ class Userss extends Model
     public function userDepartment() {
         return $this->belongsTo(Department::class, 'department_name', 'name');
     }
+    
 }

@@ -16,9 +16,9 @@ return new class extends Migration
     {
         Schema::create('usersses', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('department_name');
-            $table->string('designation_name');
+            $table->string('name',length:50);
+            $table->string('department_name',length:50);
+            $table->string('designation_name',length:50);
             $table->string('phone')->nullable()->unique();
             $table->timestamp('created_at');
             
